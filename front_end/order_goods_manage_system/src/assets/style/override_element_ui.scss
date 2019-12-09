@@ -1,0 +1,298 @@
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import './var';
+@import "~element-ui/packages/theme-chalk/src/index";
+
+
+.el-table {
+    margin-top: 14px;
+    th {
+        padding: 0;
+        height: 40px;
+        background:rgb(242, 242, 242);
+        border: 1px solid rgb(242, 242, 242);
+
+        .cell {
+            font-size: 14px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 30px;
+        }
+    }
+
+    .el-table__body-wrapper {
+        border-left: 1px #f2f2f2 solid;
+        border-right: 1px #f2f2f2 solid;
+    }
+    .el-button--text{
+        padding:0;
+        font-size: 14px;
+        color: rgba(107,164,239,0.95);
+    }
+    td{
+        height: 40px;
+        padding:0;
+    }
+}
+
+.el-dialog {
+    .el-dialog__header {
+        padding: 0 !important;
+        height: 50px;
+        line-height: 50px;
+        background: #F2F2F2;
+
+        .el-dialog__title {
+            margin-left: 10px;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .el-dialog__headerbtn {
+            top: 12px;
+            .el-icon-close {
+                font-size: 26px;
+            }
+        }
+    }
+
+    .el-dialog__body {
+        padding: 15px !important;
+    }
+
+    .el-dialog__footer {
+        height: 67px;
+        padding: 0;
+        text-align: center;
+        line-height: 67px;
+
+        .btn {
+            box-sizing: border-box;
+            padding: 7px 29px;
+            font-size: 14px;
+            border-radius: 2px;
+            outline: none;
+            border: none;
+            line-height: initial;
+            user-select: none;
+
+            &:active {
+                transform: scale(.9);
+            }
+        }
+
+        .confirm {
+            background: #009688;
+            color: #fff;
+        }
+
+        .cancel {
+            margin-left: 20px;
+            color: #666666;
+            background: #E7E7E7;
+            border: 1px solid #CCCCCC;
+            border-radius: 2px;
+        }
+    }
+}
+
+
+.el-radio-group {
+    height: 36px;
+    padding: 3px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+
+    .el-radio-button {
+        &:first-child {
+            .el-radio-button__inner {
+                border-left: none !important;
+            }
+
+        }
+    }
+
+    .is-active {
+        // background: #666666;
+        // border-radius: 4px;
+
+        .el-radio-button__inner {
+            background: #009688;
+            border-radius: 4px;
+            border: none;
+            box-shadow: none;
+
+            &:hover {
+                color: #fff;
+            }
+
+
+        }
+    }
+
+    .el-radio-button__inner {
+        padding: 7px 20px;
+        border: none;
+        user-select: none;
+
+        &:hover {
+            color: #000;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.el-tabs {
+    user-select: none;
+
+    .el-tabs__header {
+        margin-bottom: 0px;
+    }
+
+    .el-tabs__item {
+        &:hover {
+            color: #009688;
+        }
+    }
+    .el-tabs__item.is-active {
+        color: #009688;
+    }
+
+    .el-tabs__active-bar {
+        background: #009688;
+    }
+}
+
+.el-form {
+    .el-form-item__label {
+        margin-bottom: 10px;
+        padding: 0;
+        font-size: 16px;
+        color: #151515;
+        letter-spacing: 0;
+        line-height: 20px;
+    }
+
+    .el-form--inline .el-form-item {
+        margin-right: 0px;
+    }
+
+    .el-input__inner {
+        border-radius: 0;
+    }
+
+    .el-input__inner:focus {
+        border-color: #009688;
+        outline: 0;
+    }
+}
+
+@mixin change-el-btn-style($class-name, $color) {
+    .el-button.#{$class-name} {
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid $color;
+        color: $color;
+        -webkit-appearance: none;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: 0;
+        margin: 0;
+        -webkit-transition: .1s;
+        transition: .1s;
+        font-weight: 500;
+        padding: 12px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+
+        &:active {
+            color: $color;
+            border-color: $color;
+            transform: scale(.9);
+        }
+
+        &:hover {
+            background: #fff;
+            border-color: $color;
+            color: $color;
+        }
+
+        &:focus {
+            background: #fff;
+            border-color: $color;
+            color: $color;
+        }
+    }
+
+    .el-button.#{$class-name}.el-button--mini {
+        padding: 7px 15px;
+    }
+}
+
+@include change-el-btn-style(color-009688, #009688);
+
+// .el-switch {
+//     height: 16px;
+//     width: 38px;
+
+//     .el-switch__core {
+//         height: 16px;
+//         width: 38px;
+
+//         &::after {
+//             content: "";
+//             position: absolute;
+//             top: -4px;
+//             left: -4px;
+//             border-radius: 100%;
+//             -webkit-transition: all .3s;
+//             transition: all .3s;
+//             width: 22px;
+//             height: 22px;
+//             background-color: #fff;
+//         }
+//     }
+// }
+
+.el-checkbox {
+    .el-checkbox__inner {
+
+        &:after {
+            box-sizing: content-box;
+            content: "";
+            border: 2px solid #009688;
+            border-left: 0;
+            border-top: 0;
+            height: 12px;
+            left: 5px;
+            position: absolute;
+            top: 0px;
+            transform: rotate(45deg) scaleY(0);
+            width: 6px;
+            transition: transform .15s ease-in .05s;
+            transform-origin: center;
+        }
+
+    }
+
+    .is-indeterminate .el-checkbox__inner::before {
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: #009688;
+        height: 2px;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        left: 0;
+        right: 0;
+        top: 8px;
+    }
+}

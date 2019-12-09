@@ -1,0 +1,45 @@
+.fade-enter-active {
+    transition: all .3s ease;
+}
+
+.fade-leave-active {
+    transition: all .3s ease;
+}
+
+.fade-enter, .fade-leave-to
+/* .slide-fade-leave-active for below version 2.1.8 */ {
+    opacity: 0;
+}
+
+.slide-fade-enter-active {
+    transition: all .3s ease;
+
+}
+.slide-fade-leave-active {
+    transition: all .3s ease;
+}
+
+.slide-fade-enter
+/* .slide-fade-leave-active for below version 2.1.8 */ {
+    transform: translateY(-30px);
+    opacity: 1;
+}
+
+.slide-fade-leave-to {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.fade-pop-enter-active {
+    transition: all .3s ease;
+}
+
+.fade-pop-leave-active {
+    transition: all .3s ease;
+}
+
+.fade-pop-enter, .fade-pop-leave-to
+/* .slide-fade-leave-active for below version 2.1.8 */ {
+    transform: scale(.8);
+    opacity: 0;
+}

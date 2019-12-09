@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>500 森果</title>
+    <style>
+        body{text-align:center;font-family:Roboto,Helvetica,Arial,sans-serif;margin:0;}
+        .content{display:block;max-width:960px;margin:0 auto;text-align:center;}
+        .wrong-pic{height:300px;width:100%;max-width:500px;margin:0 auto;}
+        .wrong-pic>img{width:100%;height:300px;object-fit:cover;object-position:center;}
+        .warn-wrap{margin:0 10px;text-align:left;word-break:break-all;}
+        .warn-info{margin:20px auto;font-weight:bold;font-size:16px;}
+        .stack-trace{margin:10px auto;font-size:14px;}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="wrong-pic">
+            <img src="{{error_cover_img}}" />
+        </div>
+        <div class="warn-wrap">
+            <p class="warn-info">剩余过期时间：{{time_left}}小时，请尽快处理，避免信息过期</p>
+            <p class="warn-info">报错次数：{{times}}</p>
+            {% if isinstance(error_msg,list) %}
+                {% for msg in error_msg %}
+                <p class="stack-trace">{{msg}}</p>
+                {% end %}
+            {% else %}
+                <p class="stack-trace">{{error_msg}}</p>
+            {% end %}
+        </div>
+    </div>
+</body>
+</html>

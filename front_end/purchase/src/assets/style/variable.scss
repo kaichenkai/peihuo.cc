@@ -1,0 +1,31 @@
+/* ------------ colors ----------------- */
+$--color-white: #fff !default;
+$--color-black: #000 !default;
+$--color-primary: #58D0A6 !default;
+$--color-primary-alpha-1: rgba($--color-primary, 0.1);
+$--color-primary-alpha-2: rgba($--color-primary, 0.2);
+$--color-primary-alpha-3: rgba($--color-primary, 0.3);
+$--color-primary-alpha-4: rgba($--color-primary, 0.4);
+$--color-primary-alpha-5: rgba($--color-primary, 0.5);
+$--color-primary-alpha-6: rgba($--color-primary, 0.6);
+$--color-primary-alpha-7: rgba($--color-primary, 0.7);
+$--color-primary-alpha-8: rgba($--color-primary, 0.8);
+$--color-primary-alpha-9: rgba($--color-primary, 0.9);
+$--color-yellow: #ffbf17;
+$--color-999: #999;
+$--color-333: #333;
+$--color-666: #666;
+
+$--font-color-333: $--color-333;
+$--font-color-666: $--color-666;
+$--font-color-999: $--color-999;
+$--font-color-yellow: $--color-yellow;
+
+/* ------------------ font size ---------------------- */
+$--font-size-10: 10px;
+$--font-size-12: 12px;
+$--font-size-14: 14px;
+$--font-size-16: 16px;
+$--font-size-18: 18px;
+$--font-size-20: 20px;
+$--font-size-22: 22px;

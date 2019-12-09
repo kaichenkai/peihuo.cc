@@ -1,0 +1,3 @@
+MYSQL_ROOT_PASSWORD=password123
+MYSQL_USER=testusername
+MYSQL_PASSWORD=password123123
