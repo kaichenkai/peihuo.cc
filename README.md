@@ -1,4 +1,4 @@
-# 森果采购配货系统 ph.senguo.cc
+# 采购配货系统 peihuo.cc
 
 ## 后端
 
