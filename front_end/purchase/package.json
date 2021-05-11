@@ -11,7 +11,7 @@
     "axios": "^0.18.0",
     "element-ui": "^2.4.8",
     "fastclick": "^1.0.6",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "velocity-animate": "^1.5.2",
     "viewport-units-buggyfill": "^0.6.2",
     "vue": "^2.5.17",
