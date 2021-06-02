@@ -23,7 +23,7 @@ requests==2.19.1
 six==1.11.0
 SQLAlchemy==1.2.12
 tornado==5.1.1
-urllib3==1.23
+urllib3==1.26.5
 vine==1.1.4
 pypinyin==0.33.2
 openpyxl==2.5.9
